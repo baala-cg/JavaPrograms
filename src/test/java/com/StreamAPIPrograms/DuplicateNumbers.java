@@ -15,15 +15,20 @@ public class DuplicateNumbers {
 
 		//		Approach - 1
 
-		Set<Integer> dupNum = numbers.stream().filter(e -> Collections.frequency(numbers, e) > 1)
+		Set<Integer> dupNum = numbers.stream()
+				.filter(e -> Collections.frequency(numbers, e) > 1)
 				.collect(Collectors.toSet());
+//        		.collect(Collectors.toList());
+
 
 		System.out.println("duplicate numbers are: " + dupNum);
 
 //		Approach - 2
 
 		Set<Integer> set = new HashSet<>();
-		Set<Integer> dupNum2 = numbers.stream().filter(e -> !set.add(e)).collect(Collectors.toSet());
+		Set<Integer> dupNum2 = numbers.stream()
+				.filter(e -> !set.add(e))
+				.collect(Collectors.toSet());
 
 		System.out.println("duplicate numbers are: " + dupNum2);
 

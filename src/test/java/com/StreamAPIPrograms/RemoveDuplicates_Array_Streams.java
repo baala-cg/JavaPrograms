@@ -7,15 +7,17 @@ public class RemoveDuplicates_Array_Streams {
 	public static void main(String[] args) {
 		Integer numbers[] = { 10, 10, 20, 30, 12, 20 };
 
-		List<Integer> unique = Arrays.stream(numbers)
+//		List<Integer> unique = 
+				Arrays.stream(numbers)
 				.distinct()
-				.collect(Collectors.toList());
+//				.collect(Collectors.toList())
+				.forEach(System.out::println);
 		
-		System.out.println("Distinct numbers are: " + unique.size());
+//		System.out.println("Distinct numbers are: " + unique.size());
 
-		for (int n : unique) {
-			System.out.println(n);
-		}
+//		for (int n : unique) {
+//			System.out.println(n);
+//		}
 
 	}
 }

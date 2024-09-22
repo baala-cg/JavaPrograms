@@ -2,7 +2,7 @@ package com.BasicPrograms;
 
 import java.util.Scanner;
 
-public class Palindrome {
+public class Palindrome_String {
     public static void main (String[] args) {
         String original, reverse = "";
         Scanner in = new Scanner(System.in);
@@ -10,8 +10,8 @@ public class Palindrome {
         System.out.println("Enter the number or String");
         original = in.nextLine();
         length = original.length();
-        for (int i =length -1; i>=0; i--) {
-            reverse = reverse + original.charAt(i);
+        for (int i =0; i<length; i++) {
+            reverse = reverse + original.charAt(length-1-i);
         }
         System.out.println("reverse is:" +reverse);
          

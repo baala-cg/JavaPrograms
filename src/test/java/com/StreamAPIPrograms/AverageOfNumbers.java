@@ -10,7 +10,7 @@ public class AverageOfNumbers {
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
 		double average = numbers.stream()
-				.mapToInt(e -> e)
+				.mapToInt(ele -> ele)
 				.average()
 				.getAsDouble();
 

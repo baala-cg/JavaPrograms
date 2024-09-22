@@ -2,6 +2,7 @@ package com.StreamAPIPrograms;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class LimitNumbers {
@@ -23,7 +24,7 @@ public class LimitNumbers {
 
 //		or
 
-		int first5sum = numbers.stream()
+		Integer first5sum = numbers.stream()
 				.limit(5)
 				.reduce((a, b) -> a + b)
 				.get();
@@ -31,7 +32,7 @@ public class LimitNumbers {
 
 		// skip:
 
-		int sumpostskipfive = numbers.stream()
+		Integer sumpostskipfive = numbers.stream()
 				.skip(5)
 				.reduce((a, b) -> a + b)
 				.get();

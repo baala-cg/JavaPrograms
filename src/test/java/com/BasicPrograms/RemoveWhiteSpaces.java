@@ -17,6 +17,6 @@ class RemoveWhiteSpaces
                 sb.append(chars[i]);
             }
         } 
-        System.out.println(sb);           //Output : CoreJavajspservletsjdbcstrutshibernatespring
+        System.out.println(sb);           //Output : SaketSauravisanAutomationEngineer
     }
 }

@@ -1,6 +1,8 @@
 package com.BasicPrograms;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -35,7 +37,9 @@ public class BubbleSort {
 //		}
 
 		// Using lambda expression with forEach
-		Arrays.stream(numbers).forEach(ele -> System.out.println(ele));
+		Arrays.stream(numbers)
+//		.sorted()
+		.forEach(ele -> System.out.println(ele));
 
 	}
 
