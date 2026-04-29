@@ -21,16 +21,22 @@ public class DuplicateWordsInString {
 		 * 
 		 * }
 		 */
-		
-		for(String word : words) {
+
+		for (String word : words) {
 			storeMap.put(word, storeMap.getOrDefault(word, 0) + 1);
 		}
 
-		for (Map.Entry<String, Integer> entry : storeMap.entrySet()) {
-			if (entry.getValue() > 1) {
-				System.out.println("Word: " + entry.getKey() + " is displayed: " + entry.getValue() + " times");
+//		for (Map.Entry<String, Integer> entry : storeMap.entrySet()) {
+//			if (entry.getValue() > 1) {
+//				System.out.println("Word: " + entry.getKey() + " is displayed: " + entry.getValue() + " times");
+//			}
+//		}
+
+		storeMap.forEach((key, value) -> {
+			if (value > 1) {
+				System.out.println("Word: " + key + " is displayed: " + value + " times");
 			}
-		}
+		});
 
 	}
 
