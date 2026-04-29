@@ -14,8 +14,8 @@ public class NumberStartsWith {
 //				.map(e -> String.valueOf(e))
 				.map(String::valueOf)
 				.filter(e -> e.startsWith("3"))
-				.map(e -> Integer.parseInt(e))
-//		.map(Integer::valueOf)          can be used instead of above statement to convert String to Integer
+//				.map(e -> Integer.parseInt(e))
+		        .map(Integer::valueOf)      //    can be used instead of above statement to convert String to Integer
 				.collect(Collectors.toList());
 
 		System.out.println("numbers starting with 3 : " + numberstartswith3);

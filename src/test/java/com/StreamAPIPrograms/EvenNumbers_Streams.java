@@ -13,13 +13,13 @@ package com.StreamAPIPrograms;
 
 	        // Using filter to get even numbers
 	        List<Integer> evenNumbers = numbers.stream()
-	                                           .filter(n -> n % 2 == 0)
-//	                                           .map(n -> n * n)           -- we can use map here as well
+	                                           .filter(e -> e % 2 == 0)
+//	                                           .map(e -> e * e)           -- we can use map here as well
 	                                           .collect(Collectors.toList());
 
 	        // Using map to square each even number
 	        List<Integer> squaredEvenNumbers = evenNumbers.stream()
-	                                                      .map(n -> n * n)
+	                                                      .map(e -> e * e)
 	                                                      .collect(Collectors.toList());
 
 	        // Print the results

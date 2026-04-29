@@ -8,7 +8,7 @@ public class ReverseString {
 		String revStr = "";
 
 		for (int i = 0; i < str.length(); i++) {
-			revStr = revStr + str.charAt((str.length() - 1) - i);
+			revStr += str.charAt((str.length() - 1) - i);
 		}
 		System.out.println("Reversed string is :" + revStr);
 	}

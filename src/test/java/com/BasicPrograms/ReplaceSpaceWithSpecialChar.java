@@ -10,7 +10,7 @@ public class ReplaceSpaceWithSpecialChar {
 		String phrase = "Test Automation is essential these days";
 
 		// Array of special characters to use
-		char[] specialChars = { '@', '#', '£', '_', '&' };
+		char[] specialChars = { '@', '#', '£', '_' };
 
 		// StringBuilder to build the new string
 		StringBuilder result = new StringBuilder();
@@ -26,6 +26,7 @@ public class ReplaceSpaceWithSpecialChar {
 
 				// Update the index to the next special character
 				specialCharIndex = (specialCharIndex + 1) % specialChars.length;
+//				specialCharIndex++;
 			} else {
 				// If not a space, just append the character as is
 				result.append(ch);

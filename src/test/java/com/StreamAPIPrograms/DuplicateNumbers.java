@@ -1,5 +1,5 @@
 package com.StreamAPIPrograms;
-
+import java.util.*;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
@@ -11,7 +11,7 @@ public class DuplicateNumbers {
 
 	public static void main(String[] args) {
 
-		List<Integer> numbers = Arrays.asList(33, 23, 25, 26, 18, 19, 24, 25, 25, 33);
+		List<Integer> numbers = new ArrayList<>(Arrays.asList(33, 23, 25, 26, 18, 19, 24, 25, 25, 33));
 
 		//		Approach - 1
 

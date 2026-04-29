@@ -1,7 +1,10 @@
 package com.StreamAPIPrograms;
 
-import java.util.Arrays;
-import java.util.List;
+//import java.util.Arrays;
+//import java.util.List;
+//import java.util.stream.Collectors;
+
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ToUpperCase_Streams{
@@ -10,8 +13,12 @@ public class ToUpperCase_Streams{
 			List<String> stringList = Arrays.asList("apple", "banana", "cherry", "date");
 
 			// Using Stream API to convert each string to uppercase
+//			List<String> uppercasedList = stringList.stream()
+//					.map(String::toUpperCase)
+//					.collect(Collectors.toList());
+			
 			List<String> uppercasedList = stringList.stream()
-					.map(String::toUpperCase)
+					.map(e -> e.toUpperCase())
 					.collect(Collectors.toList());
 
 			// Print the result

@@ -14,9 +14,9 @@ class DuplicateElementsArray {
 			if (count == null) {
 				storeMap.put(word, 1);
 			} else {
-				storeMap.put(word, storeMap.get(word) + 1);
+//				storeMap.put(word, storeMap.get(word) + 1);
+				storeMap.put(word, ++count);
 			}
-
 		}
 
 		for (Map.Entry<String, Integer> entry : storeMap.entrySet()) {

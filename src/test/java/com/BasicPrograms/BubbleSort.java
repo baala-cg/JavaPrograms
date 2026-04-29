@@ -22,6 +22,8 @@ public class BubbleSort {
 				}
 			}
 		}
+		
+		System.out.println(Arrays.toString(numbers));
 
 //		Can use any of the below to display the data
 		
@@ -39,7 +41,7 @@ public class BubbleSort {
 		// Using lambda expression with forEach
 		Arrays.stream(numbers)
 //		.sorted()
-		.forEach(ele -> System.out.println(ele));
+		.forEach(e -> System.out.println(e));
 
 	}
 

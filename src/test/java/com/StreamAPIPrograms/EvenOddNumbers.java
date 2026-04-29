@@ -21,6 +21,12 @@ public class EvenOddNumbers {
 				.collect(Collectors.toList());
 
 		System.out.println("odd numbers list: " + oddlist);
+		
+		oddlist.addAll(evenlist);
+		System.out.println("odd numbers list: " + oddlist);
+
+		
+		
 	}
 
 }

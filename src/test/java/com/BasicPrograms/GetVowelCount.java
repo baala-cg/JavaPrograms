@@ -10,7 +10,7 @@ public class GetVowelCount {
 		String phrase = "Test Automation is essential these days";
 
 		// Convert the string to lowercase to handle case insensitivity
-		phrase = phrase.toLowerCase();
+//		phrase = phrase.toLowerCase();
 
 		// Create a map to store the count of each vowel
 		Map<Character, Integer> cntMap = new HashMap<>();
@@ -19,15 +19,12 @@ public class GetVowelCount {
 		for (char ch : phrase.toCharArray()) {
 			if (isVowel(ch)) {
 				// If the character is a vowel, update its count in the map
-//		            	cntMap.put(ch, cntMap.getOrDefault(ch, 0) + 1);
+		            	cntMap.put(ch, cntMap.getOrDefault(ch, 0) + 1);
 
-				Integer count = cntMap.get(ch);
-				if (count == null) {
-					cntMap.put(ch, 1);
-				} else {
-					cntMap.put(ch, cntMap.get(ch) + 1);
-				}
-
+				/*
+				 * Integer count = cntMap.get(ch); if (count == null) { cntMap.put(ch, 1); }
+				 * else { cntMap.put(ch, cntMap.get(ch) + 1); }
+				 */
 			}
 		}
 
@@ -38,8 +35,13 @@ public class GetVowelCount {
 	}
 
 	// Helper method to check if a character is a vowel
+	/*
+	 * private static boolean isVowel(char ch) { return ch == 'a' || ch == 'e' || ch
+	 * == 'i' || ch == 'o' || ch == 'u'; }
+	 */
+	
 	private static boolean isVowel(char ch) {
-		return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+		return "AEIOUaeiou".indexOf(ch) != -1;
 	}
 
 }

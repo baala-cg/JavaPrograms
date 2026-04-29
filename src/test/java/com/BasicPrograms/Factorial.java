@@ -10,8 +10,6 @@ public class Factorial {
 		
 		int number = fact(4);
 		System.out.println(number);
-		
-		
 	}
 
 	public static int fact(int num) {
@@ -22,4 +20,13 @@ public class Factorial {
 		}
 		
 	}
+	
+/*	public static int fact1(int num) {
+		if(num == 0) {
+			return 1;
+		} else {
+			return num * fact(num-1);
+		}*/
+		
+//	}
 }

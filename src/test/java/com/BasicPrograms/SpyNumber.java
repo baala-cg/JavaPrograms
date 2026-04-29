@@ -7,15 +7,15 @@ import java.util.stream.Collectors;
 public class SpyNumber {
 
 	public static void main(String[] args) {
-		int number = 1124;
+		int number = 4211;
 		int org_num = number;
 
 		int sum = 0, product = 1;
 
 		while (number > 0) {
-			sum = sum + number % 10;
-			product = product * number % 10;
-			number = number / 10;
+			sum += number % 10;
+			product *= number % 10;
+			number /= 10;
 		}
 
 		if (sum == product) {

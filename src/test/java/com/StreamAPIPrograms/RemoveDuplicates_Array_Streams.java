@@ -15,7 +15,7 @@ public class RemoveDuplicates_Array_Streams {
 		
 //		System.out.println("Distinct numbers are: " + unique.size());
 
-//		for (int n : unique) {
+//		for (int n : numbers) {
 //			System.out.println(n);
 //		}
 

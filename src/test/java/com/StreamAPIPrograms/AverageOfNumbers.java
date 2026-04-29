@@ -5,13 +5,14 @@ import java.util.List;
 
 public class AverageOfNumbers {
 
+	
 	public static void main(String[] args) {
 
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
 
 		double average = numbers.stream()
-				.mapToInt(ele -> ele)
-				.average()
+				.mapToInt(e -> e)         //convert Integer to int primitive data type , to convert the Stream<Integer> into a primitive IntStream
+				.average()            // does average of int primitive data types
 				.getAsDouble();
 
 		System.out.println("average of numbers: " + average);
