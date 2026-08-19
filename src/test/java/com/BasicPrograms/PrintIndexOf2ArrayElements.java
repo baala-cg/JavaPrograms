@@ -1,6 +1,8 @@
 package com.BasicPrograms;
 
 import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PrintIndexOf2ArrayElements {
 
@@ -31,5 +33,66 @@ public class PrintIndexOf2ArrayElements {
             map.putIfAbsent(arr[i], new ArrayList<>());
             map.get(arr[i]).add(i);
         }
+    }
+}
+
+
+
+
+
+
+class FindPairs {
+
+    public static void main(String[] args) {
+
+        int[] arr = {6, 11, 11, 6, 7, 18};
+        int target = 17;
+
+        Set<String> pairs = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+
+                if (arr[i] + arr[j] == target) {
+
+//                    int first = Math.min(i, j);
+//                    int second = Math.max(i, j);
+
+                    pairs.add("(" + i + ", " + j + ")");
+                }
+            }
+        }
+
+        System.out.println(pairs);
+    }
+}
+
+
+
+
+
+class FindPairs1 {
+
+    public static void main(String[] args) {
+
+        int[] arr = {3, 5, 4, 3, 6, 7, 7, 2, 5};
+        int target = 9;
+
+        Set<String> pairs = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+
+                if (arr[i] + arr[j] == target) {
+
+                    int first = Math.min(i, j);
+                    int second = Math.max(i, j );
+
+                    pairs.add("(" + first + ", " + second + ")");
+                }
+            }
+        }
+
+        System.out.println(pairs);
     }
 }

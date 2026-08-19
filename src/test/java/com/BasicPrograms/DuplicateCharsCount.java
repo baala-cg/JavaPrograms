@@ -26,7 +26,7 @@ class DuplicateCharsCount {
 		}
 
 		for (Map.Entry<Character, Integer> entry : storeMap.entrySet()) {
-			if (entry.getValue() > 0) {
+			if (entry.getValue() > 1) {
 				System.out.println("Character: " + entry.getKey() + " is dispayed: " + entry.getValue() + " times");
 			}
 		}
