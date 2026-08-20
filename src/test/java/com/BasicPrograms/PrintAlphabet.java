@@ -1,30 +1,24 @@
 package com.BasicPrograms;
 
 public class PrintAlphabet {
-
     public static void main(String[] args) {
 
-        String str = "a5b3c10";
+        String s = "a12b2c6";
 
-        int i = 0;
+        String[] parts = s.split("(?=[a-zA-Z])");
 
-        while (i < str.length()) {
+        for (String part : parts) {
 
-            char ch = str.charAt(i);
-            i++;
-
-            StringBuilder number = new StringBuilder();
-
-            while (i < str.length() && Character.isDigit(str.charAt(i))) {
-                number.append(str.charAt(i));
-                i++;
-            }
-
-            int count = Integer.parseInt(number.toString());
-
-            for (int j = 0; j < count; j++) {
+            char ch = part.charAt(0);
+            int count = Integer.parseInt(part.substring(1));
+//    Using Java 8
+            for (int i = 0; i < count; i++) {
                 System.out.print(ch);
             }
+
+//            Using Java 11 or more
+//            System.out.print(String.valueOf(ch).repeat(count));
+
         }
     }
 }
